@@ -24,7 +24,7 @@
                 </thead>
                 <tbody>
                     <tr>
-                        <td>{{ weatherData.name }}</td>
+                        <td>{{ weatherData.name }} ({{ weatherData.sys.country }})</td>
                         <td>{{ Math.round(weatherData.main.temp) }}°C</td>
                         <td>{{ weatherData.weather[0]?.description }}</td>
                         <td>{{ weatherData.main.humidity }}%</td>
