@@ -15,7 +15,7 @@ class WeatherService
 
     public function getCoordinates(string $city)
     {
-        $url = "http://api.openweathermap.org/geo/1.0/direct?q={$city}&appid={$this->apiKey}";
+        $url = "https://api.openweathermap.org/geo/1.0/direct?q={$city}&appid={$this->apiKey}";
 
         $response = Http::get($url);
 
